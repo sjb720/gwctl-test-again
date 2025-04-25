@@ -13,7 +13,7 @@ spec:
   interval: 1m
   url: https://github.com/sjb720/gwctl-test-again
   ref:
-    branch: main
+    branch: test
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
