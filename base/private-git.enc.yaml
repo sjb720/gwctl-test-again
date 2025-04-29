@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    name: private-git
+    namespace: bigbang
+stringData:
+    username: ENC[AES256_GCM,data:nPgj+dQH,iv:jEFJ/mT1Qgo7izbBSLIofFGLE01f5DFMfwoRKzwlILk=,tag:EgJfi3NXBU9bLreXlQSKIg==,type:str]
+    password: ENC[AES256_GCM,data:KKp18ZchODkCzEU7/a9Efp0DkLqQ6cNYjsKEFEXSSQOx/Uk8C8ulJQ==,iv:8kwyIbGt8fD7UOM/xN7ROJ5pLJXGQT34/lheW2uSIK0=,tag:It4MBYa0WajRpDr1iuUPSg==,type:str]
+sops:
+    age:
+        - recipient: age10qldtcflj77gkm5x33sv38epxepamuq0rysz535nu73yq5ujpdpqrl6gla
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB1SVV4ZUdSTnUzWDg5UUFZ
+            K21rc0MwT3NoT245T25Rc0VvV2dsdG1FMm1nCndXdTlaRmIwY3M2dElXeXJuZ25o
+            MXdtblNtdEgreS9yRFNrRFQyUnFkTGcKLS0tIHBIQmM4ZUJVQzh2eFg0RDUvdEQw
+            VGxoUEtvRy9rYVZxck5yNVJ0SGhGZ2sKw70AoxHImlwLdv3K1B5GD6KGLPgSmUDI
+            7jaWgxo05xQt7U78d0wD2OZ4mWUSYgIGBXRecPYT5yRjCduw4v2NQg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-04-29T18:57:25Z"
+    mac: ENC[AES256_GCM,data:vAfKK7y5GRmDNkPb7+Fr5TU2PdtJyBrbj9jZ843LMvBG3nblEKNxfeWfkkfR23GixzBWtjTz58HpbhHHyO6wJlc0vz6QPOzAqvGHpP1HJtKrc5ojqmr1jR8+kems559V9vzimL6TH8KL891qFs0mUr8WZNMYhT0H68tCj2ZpV3o=,iv:PAp6xK+LPgcg+zn2oX5f28gA19DEQMm1cjst+svTemM=,tag:B5drWjqWGcGYuoxMJFtw+g==,type:str]
+    encrypted_regex: ^(data|stringData)$
+    version: 3.8.1
